@@ -10,4 +10,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './proConsStreamPage.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProConsStreamPageComponent { }
+export default class ProConsStreamPageComponent { }
