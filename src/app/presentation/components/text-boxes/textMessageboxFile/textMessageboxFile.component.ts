@@ -23,20 +23,17 @@ export class TextMessageBoxFileComponent {
   @Input() placeholder: string = '';
   @Output() onMessage = new EventEmitter<TextMessageEvent>();
 
-
   public fb = inject(FormBuilder);
   public form = this.fb.group({
     prompt: [],
     file: [null, Validators.required ]
   });
+  
   public file: File | undefined;
 
-
-  handleSelectedFile( event: any ) {
-    const file = event.target.files.item(0);
-    this.form.controls.file.setValue(file);
-
-  }
+  handleSelectedFile( event: any )
+   {const file = event.target.files.item(0);
+    this.form.controls.file.setValue(file);}
 
 
   handleSubmit() {
