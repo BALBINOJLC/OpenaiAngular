@@ -10,20 +10,15 @@
       class="flex items-center justify-center text-gray-400">
       <i class="fa-solid fa-paperclip text-xl"></i>
     </button>
-
     <input
       type="file"
       #fileInput
       hidden
       (change)="handleSelectedFile($event)"
     >
-
   </div>
-
-
   <div class="flex-grow">
     <div class="relative w-full">
-
       <input
         type="text"
         autofocus
@@ -31,7 +26,6 @@
         [placeholder]="placeholder"
         formControlName="prompt"
       >
-
     </div>
   </div>
 
